@@ -8,6 +8,11 @@ public class Circle extends Shape implements Measurable {
 
     Circle(String name, double radius) {
         super(name);
+
+        if (radius <= 0 ) {
+            throw new IllegalArgumentException("Radius must be bigger than 0");
+        }
+
         this.radius = radius;
     }
 

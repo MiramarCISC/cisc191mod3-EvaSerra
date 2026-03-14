@@ -9,6 +9,11 @@ public class Rectangle extends Shape implements Measurable {
 
     Rectangle(String name, double height, double width) {
         super(name);
+
+        if (height <= 0 || width <= 0 ) {
+            throw new IllegalArgumentException("All sides must be bigger than 0");
+        }
+
         this.height = height;
         this.width = width;
     }
