@@ -30,11 +30,6 @@ public class Rectangle extends Shape implements Measurable {
         return 2 * width + 2 * height;
     }
 
-    @Override
-    public String toString() {
-        return String.format("Rectangle { name = '%s', perimeter = %f, area = % f}",
-                getName(), perimeter(), area());
-    }
 
     @Override
     public boolean equals(Object o) {

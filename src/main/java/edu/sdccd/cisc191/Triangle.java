@@ -45,12 +45,6 @@ public class Triangle extends Shape implements Measurable {
     }
 
     @Override
-    public String toString() {
-        return String.format("Triangle { name = '%s', perimeter = %f, area = % f}",
-                getName(), perimeter(), area());
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;

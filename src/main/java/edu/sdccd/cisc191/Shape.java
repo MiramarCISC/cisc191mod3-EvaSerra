@@ -24,7 +24,7 @@ public abstract class Shape implements Measurable, Comparable<Shape> {
 
     @Override
     public String toString() {
-        return String.format("%s { name = '%s', perimeter = %f, area = % f}", getClass(), name, perimeter(), area());
+        return String.format("%s { name = '%s', perimeter = %f, area = % f}", getClass().getSimpleName(), name, perimeter(), area());
     }
 
     @Override
